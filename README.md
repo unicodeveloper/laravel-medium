@@ -1,2 +1,2 @@
 # laravel-medium
-:package: A Medium Bridge for Laravel 5
+:package: A Medium Bridge for Laravel 5 **WIP**
