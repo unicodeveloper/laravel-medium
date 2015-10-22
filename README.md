@@ -16,7 +16,7 @@
 First, pull in the package through Composer.
 
 ``` bash
-$ composer require busayo/laravel-medium
+$ composer require unicodeveloper/laravel-medium
 ```
 
 Another alternative is to simply add the following line to the require block of your `composer.json` file.
