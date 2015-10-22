@@ -1,7 +1,6 @@
 # Laravel-Medium
 
 [![Latest Stable Version](https://poser.pugx.org/busayo/laravel-medium/v/stable.svg)](https://packagist.org/packages/busayo/laravel-medium)
-![](https://img.shields.io/badge/unicodeveloper-approved-brightgreen.svg)
 [![License](https://poser.pugx.org/busayo/laravel-medium/license.svg)](LICENSE.md)
 [![Build Status](https://img.shields.io/travis/busayo/laravel-medium.svg)](https://travis-ci.org/busayo/laravel-medium)
 [![Quality Score](https://img.shields.io/scrutinizer/g/busayo/laravel-medium.svg?style=flat-square)](https://scrutinizer-ci.com/g/busayo/laravel-medium)
