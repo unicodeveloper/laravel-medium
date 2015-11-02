@@ -1,10 +1,10 @@
-# Laravel-Medium
+# laravel-medium
 
-[![Latest Stable Version](https://poser.pugx.org/busayo/laravel-medium/v/stable.svg)](https://packagist.org/packages/busayo/laravel-medium)
-[![License](https://poser.pugx.org/busayo/laravel-medium/license.svg)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/busayo/laravel-medium.svg)](https://travis-ci.org/busayo/laravel-medium)
-[![Quality Score](https://img.shields.io/scrutinizer/g/busayo/laravel-medium.svg?style=flat-square)](https://scrutinizer-ci.com/g/busayo/laravel-medium)
-[![Total Downloads](https://img.shields.io/packagist/dt/busayo/laravel-medium.svg?style=flat-square)](https://packagist.org/packages/busayo/laravel-medium)
+[![Latest Stable Version](https://poser.pugx.org/unicodeveloper/laravel-medium/v/stable.svg)](https://packagist.org/packages/unicodeveloper/laravel-medium)
+[![License](https://poser.pugx.org/unicodeveloper/laravel-medium/license.svg)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/unicodeveloper/laravel-medium.svg)](https://travis-ci.org/unicodeveloper/laravel-medium)
+[![Quality Score](https://img.shields.io/scrutinizer/g/unicodeveloper/laravel-medium.svg?style=flat-square)](https://scrutinizer-ci.com/g/unicodeveloper/laravel-medium)
+[![Total Downloads](https://img.shields.io/packagist/dt/unicodeveloper/laravel-medium.svg?style=flat-square)](https://packagist.org/packages/unicodeveloper/laravel-medium)
 
 > Laravel Package to work with Medium. Very easy to use. Offers the use of Facades and Dependency Injection
 
@@ -21,7 +21,7 @@ $ composer require unicodeveloper/laravel-medium
 Another alternative is to simply add the following line to the require block of your `composer.json` file.
 
 ```
-"busayo/laravel-medium": "1.0.*"
+"unicodeveloper/laravel-medium": "1.0.*"
 ```
 
 Then run `composer install` or `composer update` to download it and have the autoloader updated.
@@ -46,10 +46,6 @@ Alternatively, you can run the tests like so:
 ```bash
 composer test
 ```
-
-## Inspiration
-
- * [WikiRandom](https://github.com/ihoru/WikiRandom)
 
 ## Contributing
 
