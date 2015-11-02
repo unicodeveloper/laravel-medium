@@ -6,7 +6,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/unicodeveloper/laravel-medium.svg?style=flat-square)](https://scrutinizer-ci.com/g/unicodeveloper/laravel-medium)
 [![Total Downloads](https://img.shields.io/packagist/dt/unicodeveloper/laravel-medium.svg?style=flat-square)](https://packagist.org/packages/unicodeveloper/laravel-medium)
 
-> Laravel Package to work with Medium. Very easy to use. Offers the use of Facades and Dependency Injection
+> Laravel 5 Package to work with Medium. Very easy to use. Offers the use of Facades and Dependency Injection
 
 ## Installation
 
