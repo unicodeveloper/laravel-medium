@@ -26,6 +26,102 @@ Another alternative is to simply add the following line to the require block of 
 
 Then run `composer install` or `composer update` to download it and have the autoloader updated.
 
+Add this to your providers array in `config/app.php`
+
+```php
+// Laravel 5: config/app.php
+
+'providers' => [
+    ...
+    Unicodeveloper\Medium\MediumServiceProvider::class,
+    ...
+];
+```
+
+This package also comes with a facade
+
+```php
+// Laravel 5: config/app.php
+
+'aliases' => [
+    ...
+    'Medium' => Unicodeveloper\Medium\Facades\Medium::class',
+    ...
+]
+```
+
+Publish the config file by running:
+
+```bash
+php artisan vendor:publish
+```
+
+The config file will now be located at `config/medium.php`.
+
+## Configuration
+
+This is the `medium.php` file in the `config` directory. Go to your [medium settings page](https://medium.com/me/settings),
+and generate an access token also known as integration token. Integration tokens do not expire right now, though they may be
+revoked by the user at any time.
+
+```php
+/**
+ *  Config file that a user/developer can insert the self-issued access token
+ */
+return [
+    'integrationToken' => ''
+];
+```
+
+## Usage
+
+##### MediumManager
+
+This is the class of most interest. It is bound to the ioc container as `'laravel-medium'` and can be accessed using the `Facades\Medium` facade.
+
+##### Facades\Medium
+
+This facade will dynamically pass static method calls to the `'laravel-medium'` object in the ioc container which by default is the `MediumManager` class.
+
+##### Examples
+
+Here you can see an example of just how simple this package is to use.
+
+```php
+use Unicodeveloper\Medium\Facades\Medium;
+// or you can alias this in config/app.php like I mentioned initially above
+
+Medium::me()->id;
+// returns the id of the medium user that can be used for future requests e.g 13889cdb2bb57e75ab7d7261f1f0c4df0e824b3f2249f55b788c0dc2ae84c6b8f
+
+Medium::me()->username;
+// returns the username of the medium user e.g prosper
+
+Medium::me()->name;
+// returns the full name of the medium user e.g Testing Tester
+
+Medium::me()->url;
+// returns the url of the medium profile e.g  "https://medium.com/@prosper"
+
+Medium::me()->imageUrl;
+// returns the url of the medium user avatar
+
+Medium::me()->name;
+// this example is simple, and there are far more methods available
+```
+
+The github manager will behave like it is a `\Github\Client` class. If you want to call specific connections, you can do with the `connection` method:
+
+```php
+use GrahamCampbell\GitHub\Facades\GitHub;
+
+// the alternative connection is the other example provided in the default config
+GitHub::connection('alternative')->me()->emails()->add('foo@bar.com');
+
+// now we can see the new email address in the list of all the user's emails
+GitHub::connection('alternative')->me()->emails()->all();
+```
+
 
 # WIP - PLEASE DON'T USE IN PRODUCTION YET!!!
 
