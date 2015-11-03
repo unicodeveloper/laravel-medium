@@ -105,21 +105,6 @@ Medium::me()->url;
 
 Medium::me()->imageUrl;
 // returns the url of the medium user avatar
-
-Medium::me()->name;
-// this example is simple, and there are far more methods available
-```
-
-The github manager will behave like it is a `\Github\Client` class. If you want to call specific connections, you can do with the `connection` method:
-
-```php
-use GrahamCampbell\GitHub\Facades\GitHub;
-
-// the alternative connection is the other example provided in the default config
-GitHub::connection('alternative')->me()->emails()->add('foo@bar.com');
-
-// now we can see the new email address in the list of all the user's emails
-GitHub::connection('alternative')->me()->emails()->all();
 ```
 
 
