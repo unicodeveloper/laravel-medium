@@ -108,7 +108,7 @@ Medium::me()->imageUrl;
 ```
 
 
-# WIP - PLEASE DON'T USE IN PRODUCTION YET!!!
+# WIP - PLEASE DON'T USE IN PRODUCTION YET!
 
 ## Change log
 
